@@ -29,6 +29,41 @@ var customers = [
         "email":"rlaureml@lipsum.co",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit molestias, voluptatem id blanditiis modi nobis eum esse fugiat debitis dignissimos voluptatum minus iusto provident fuga libero aliquid asperiores omnis quaerat. Incidunt, consequatur dicta quia." 
     }
-]
+];
 
-// Write you're code here. Enjoy !
+console.log('docready');
+
+
+$(customers).each(function() {
+    var x = $(this).attr('id');
+    console.log(x);
+
+ if (x == 1) {
+
+    console.log(" If 1 passe");
+    var cust= {};
+   cust = customers[0];
+    console.log(cust);
+
+    $(cust).each (function (){
+
+console.log("yes.each"); 
+$('#main').html($(cust));
+
+
+
+    }) 
+
+    // var custcont = $(cust).prop();
+    // console.log(custcont);
+     // $("#main").html('ok');
+
+
+  // $("#main").html();
+ }
+
+
+
+})
+
+
